@@ -1,0 +1,224 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+h4.sub {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #505050;
+}
+
+.divider {
+  display: block;
+  margin: 15px auto 20px;
+  height: 5px;
+  width: 80px;
+  background: #f8c358;
+}
+
+.banner-1 {
+  border-bottom: 4px solid #f8c358;
+  margin: 0px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  height: 100%;
+  /*background-color: $primary;
+    -webkit-transition: background-color 0.5s ease 0s;
+    -moz-transition: background-color 0.5s ease 0s;
+    -o-transition: background-color 0.5s ease 0s;
+    transition: background-color 0.5s ease 0s;    color: white;*/
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.2))), url("../img/bg8.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../img/bg8.jpg") no-repeat center center fixed;
+  background-size: auto, auto;
+  -webkit-background-size: cover;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  background-size: cover;
+  text-align: center;
+}
+
+.banner-1 .colorful {
+  color: #f8c358;
+  font-weight: 600;
+}
+
+.banner-1 .valign-wrapper {
+  height: 100vh;
+  display: table;
+}
+
+.banner-1 .valign-wrapper .valign {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.banner-1 .valign-wrapper .valign h3 {
+  font-size: 32pt;
+  line-height: 36pt;
+}
+
+.banner-1 .valign-wrapper .valign button {
+  margin-top: 20px;
+  border-radius: 50px;
+  padding: 10px 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.banner-1 .valign-wrapper .valign button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  color: white;
+}
+
+.over {
+  background: #e6e6e6;
+}
+
+.about {
+  text-align: center;
+  padding: 300px 10px;
+  background: white;
+}
+
+.about .about-text {
+  line-height: 200%;
+  color: gray;
+  font-size: 19px;
+  text-align: center;
+}
+
+.about .img {
+  max-width: 300px;
+  -webkit-box-shadow: 0px 52px 35px -23px lightgray;
+          box-shadow: 0px 52px 35px -23px lightgray;
+}
+
+.projects {
+  background: #5171a5;
+  padding-top: 100px;
+  margin-bottom: 38vh;
+  color: white;
+}
+
+.projects h4.sub {
+  text-align: center;
+  font-size: 35px;
+  text-transform: capitalize !important;
+  font-variant: initial;
+  font-weight: bold;
+  color: white;
+}
+
+.projects p.desc {
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 200%;
+}
+
+.projects .col-md-4 {
+  padding: 10px;
+}
+
+.projects .trans {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  height: 200px;
+  max-width: 1240px !important;
+}
+
+.projects .project {
+  text-align: center;
+  height: 250px;
+  background: white;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+          box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  color: #293347;
+  min-height: 300px;
+  border-radius: 20px;
+  padding: 50px 25px;
+  position: relative h4;
+  position-font-weight: bold;
+  position-text-transform: uppercase;
+  position-font-family: Audiowide;
+}
+
+.projects .project p {
+  color: gray;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.projects .project.runfan h4 {
+  color: #4ea8a8;
+}
+
+.projects .project.simplynote h4 {
+  color: #4e65a8;
+}
+
+.projects .project.thai h4 {
+  color: #ad5bad;
+}
+
+.projects .project .btn-colour {
+  border-color: #f8c358;
+  border-radius: 50px;
+  color: #f8c358;
+  padding: 5px 20px;
+  width: 180px;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 35px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.tsl {
+  text-align: center;
+  color: dimgray;
+}
+
+.tsl .row {
+  margin: 50px auto;
+}
+
+.tsl .fas, .tsl .far {
+  color: #5171a5;
+  margin: 50px;
+}
+
+.tsl h1 {
+  font-weight: 600;
+}
+
+.tsl .tech {
+  padding: 20px;
+}
+
+.tsl p {
+  font-size: 17px;
+  line-height: 200%;
+}
+
+footer {
+  background: #37323e;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    padding: 6px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
