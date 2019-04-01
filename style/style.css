@@ -80,11 +80,16 @@ h4.sub {
 
 .over {
   background: #e6e6e6;
+  display: table;
+  height: 80vh;
+  width: 100%;
 }
 
 .about {
   text-align: center;
   padding: 300px 10px;
+  display: table-cell;
+  vertical-align: middle;
   background: white;
 }
 
@@ -177,7 +182,7 @@ h4.sub {
   color: #f8c358;
   padding: 5px 20px;
   width: 180px;
-  margin-top: 20px;
+  margin-top: 25px;
   position: absolute;
   bottom: 35px;
   left: 0px;
@@ -188,6 +193,7 @@ h4.sub {
 .tsl {
   text-align: center;
   color: dimgray;
+  margin-bottom: 100px;
 }
 
 .tsl .row {
@@ -216,12 +222,81 @@ footer {
   background: #37323e;
   text-align: center;
   color: white;
+  position: relative;
+  margin-top: 30px;
   padding: 100px;
+}
+
+footer h1 {
+  font-weight: bold;
+}
+
+footer .social {
+  list-style-type: none;
+  padding-left: 0px !important;
+}
+
+footer .social li {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer .social li i {
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  padding: 20px;
+}
+
+footer .cop {
+  font-size: 11pt;
+  color: #8F9AA7;
+  margin-top: 35px;
+  opacity: 0.6;
+  font-variant: all-petite-caps;
+}
+
+footer .highlight {
+  color: #f8c358;
+}
+
+footer .up {
+  background: #f8c358;
+  padding: 10px;
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-115px);
+  font-weight: bold;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 600px) {
   .contact {
     padding: 6px !important;
+  }
+  .trans {
+    -webkit-transform: translateY(0%) !important;
+            transform: translateY(0%) !important;
+    height: unset !important;
+    padding-bottom: 50px;
+  }
+  .trans .project {
+    height: initial !important;
+    padding-bottom: 30px;
+  }
+  .trans .project .btn-colour {
+    bottom: 10px !important;
+  }
+  .tsl {
+    padding: 0px !important;
+  }
+  .tsl h1 {
+    font-size: 30px !important;
+  }
+  .tsl .fas, .tsl .far {
+    display: none !important;
+  }
+  footer {
+    padding: 30px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

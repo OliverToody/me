@@ -15,14 +15,15 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    <title>Oliver Tomondy</title>
+    <link rel="stylesheet" href="style/animations.css" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    <title>Oliver Tomondy</title>
   </head>
   <body>
     <div class="banner-1">
       <div class="container">
         <div class="row">
-          <div class="col col-md-12 valign-wrapper">
-          <div class="valign">
+          <div class="col col-md-12 valign-wrapper animatedParent">
+          <div class="valign animated fadeInDown">
           <h3>Hello, I am <span class="colorful">Oliver Tomondy.</span></h3>
           <h3>I'm Web Developer.</h3>
           <button class="btn btn-outline-light btn-lg">Contact me</button>
@@ -33,13 +34,13 @@
     </div>
     <div class="over">
 <div class="about">
-      <div class="container">
+      <div class="container animatedParent">
       <div class="row">
         <div class="col-md-6">
           <h4 class="sub">About Me</h4>
           <span class="divider"></span>
 
-          <div class="about-text">
+          <div class="about-text animated fadeIn">
               I am a high-school student prepared to contribute with my knowledge and skills to the success of your company. I possess a solid knowledge of web development, particularly front-end development.
               I am responsible, open-minded and a good communicator.  
               I am eager to learn and work on challenging projects. <br>
@@ -47,19 +48,19 @@
           </div>
         </div>
         <div class="col-md-6 align-center">
-          <img class="img img-fluid img-thumbnail rounded-circle" src="img/tomondy3.jpg" />
+          <img class="img img-fluid img-thumbnail rounded-circle" src="img/tomondy3.jpg"/>
         </div>
       </div>
     </div>
   </div>
-
+    </div>
     <div class="container-fluid projects">
       <h4 class="sub">My Recent Projects</h4>
             <p class="desc">I'm a bit of a digital product junky. Over the years, I've used tens of web and mobile apps. Eventually, I decided that it would be a fun challenge to try designing and building my own.</p>
-      <div class="container trans">
+      <div class="container trans animatedParent animateOnce" data-sequence='500'>
       <div class="row">
         <div class="col-md-4 col-sm-12">
-          <div class="project runfan">
+          <div class="project runfan animated bounceInDown" data-id='1'>
               <h4><i class="fas fa-dumbbell fa-lg"></i> Runfan</h4>
               <div class="card-body">
                 <p class="card-text">Fitness tracker for logging your workouts, setting goals and many more...
@@ -69,7 +70,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-            <div class="project simplynote">
+            <div class="project simplynote animated bounceInDown" data-id='2'>
                <h4><i class="fas fa-pen fa-lg"></i> SimplyNote</h4>
                 <div class="card-body">
                   <p class="card-text">Note taking web application designed to help people capture and share notes, tasks and audio notes.
@@ -80,7 +81,7 @@
         </div>
 
         <div class="col-md-4 col-sm-12">
-            <div class="project thai">
+            <div class="project thai animated bounceInDown" data-id='3'>
                 <h4><i class="fas fa-spa fa-lg"></i> Thai Massage</h4>
                 <div class="card-body">
                   <p class="card-text">A simple one-page website for a Thai Massage Centre 7 Leelwandee.
@@ -93,9 +94,8 @@
     </div>
 
     </div>
-</div>
-<div class="container tsl">
-    <div class="row">
+<div class="container tsl animatedParent"  data-sequence='500'>
+    <div class="row animated fadeIn" data-id='1'>
         <div class="col-md-6">
             <i class="fas fa-chalkboard-teacher  fa-7x"></i>
           </div>
@@ -113,7 +113,7 @@
        
       </div>
 
-  <div class="row">
+  <div class="row animated fadeIn" data-id='2'>
    
     <div class="col-md-6">
       <div class="tech">
@@ -128,14 +128,25 @@
       </div>
   </div>
 </div>
-
 <footer>
+  <i class="fas fa-chevron-up up"></i>
   <h1>Contact</h1>
+  <p>oliver.tomondy@gmail.com</p>
+  <ul class="social">
+    <li><i class="fab fa-facebook"></i></li>
+    <li><i class="fab fa-linkedin"></i></li>
+    <li><i class="fab fa-instagram"></i></li>
+  </ul>
+  <p class="cop">Oliver Tomondy <span class="highlight">@2019</span>.</p>
 </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="src/css3-animate-it.js"></script>
+  <script>
+   // $(".up").
+  </script>
   </body>
 </html>
