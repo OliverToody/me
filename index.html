@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    <title>Oliver Tomondy</title>
   </head>
   <body>
-    <div class="banner-1">
+    <div class="banner-1" id="banner">
       <div class="container">
         <div class="row">
           <div class="col col-md-12 valign-wrapper animatedParent">
@@ -129,7 +129,7 @@
   </div>
 </div>
 <footer>
-  <i class="fas fa-chevron-up up"></i>
+  <i class="fas fa-chevron-up up" id="up" onclick="scrollToTop()"></i>
   <h1>Contact</h1>
   <p>oliver.tomondy@gmail.com</p>
   <ul class="social">
@@ -146,7 +146,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="src/css3-animate-it.js"></script>
   <script>
-   // $(".up").
+const scrollToTop = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 25);
+  }
+};
+
+
   </script>
   </body>
 </html>
